@@ -5,7 +5,7 @@ int main(){
     int atualIdade;
 
     printf("Digite sua idade: \n");
-    scanf("d%", &atualIdade);
+    scanf("%d", &atualIdade);
     
     if(atualIdade >= maiorIdade){
         printf("Voce é maior de idade!");
