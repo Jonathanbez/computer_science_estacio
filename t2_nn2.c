@@ -3,13 +3,13 @@
 int main()
 {
     float   temperatura,    umidade;
-    unsigned int    estoque, estoqueMinimo;
+    unsigned int    estoque, estoqueMinimo = 1000;
 
     printf("Digite a temperetura: \n");
     scanf("%f", &temperatura);
-    printf("Digite a temperatura: \n");
+    printf("Digite a umidade: \n");
     scanf("%f", &umidade);
-    print("Digite o estoque: \n");
+    printf("Digite o estoque: \n");
     scanf("%u", &estoque);
 
     if(temperatura > 30){
@@ -26,6 +26,6 @@ int main()
     if(estoque < estoqueMinimo){
         printf("Estoque abaixo do limite.\n");
     }else{
-        printf("Estoque dentro dos parametros.\n")
+        printf("Estoque dentro dos parametros.\n");
     }
 }
