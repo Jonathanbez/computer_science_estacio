@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int main()
-{
-    float   temperatura,    umidade;
-    unsigned int    estoque, estoqueMinimo = 1000;
+int main(){
+    float temperatura, umidade;
+    unsigned int estoque;
+    unsigned int estoqueMinimo = 1000;
 
     printf("Digite a temperetura: \n");
     scanf("%f", &temperatura);
