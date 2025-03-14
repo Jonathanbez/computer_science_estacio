@@ -29,3 +29,4 @@ int main(){
         printf("Estoque dentro dos parametros.\n");
     }
 }
+k
