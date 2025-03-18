@@ -42,12 +42,12 @@ int main() {
     printf("Digite o PIB: \n");
     scanf("%f", &PIB);
 
-    printf("Digite Pontos Turisticos: \n\n");
+    printf("Digite Pontos Turisticos: \n");
     scanf("%d", &pontos_turistico);
     getchar();
 
     // 2° CARTA
-    printf("CADASTRE A 2° CARTA\n");
+    printf("\nSPCADASTRE A 2° CARTA\n");
     
     printf("Digite o UF do Estado: \n");
     fgets(ufEstado2, 4, stdin);
@@ -67,36 +67,37 @@ int main() {
     printf("Digite o PIB: \n");
     scanf("%f", &PIB2);
 
-    printf("Digite Pontos Turisticos: ");
+    printf("Digite Pontos Turisticos: \n\n");
     scanf("%d", &pontos_turistico2);
 
     //Exibe dados cadasstrados (1° carta)
-    printf("\n\n1° Carta: %s\n", codigoCarta);
+    printf("1° Carta: %s\n", codigoCarta);
     printf("1° Estado  %s\n", ufEstado);
     printf("1° Cidade: %s", nomeCidade);
     printf("1° Codigo: %s\n", codigoCarta);
     printf("1° População: %i\n", populacao);
     printf("1° Área: %.2f\n", area_cidade);
     printf("1° PIB: %.2f\n", PIB);
-    printf("1° Pontos Turisticos: %d\n\n", pontos_turistico);
+    printf("1° Pontos Turisticos: %d\n", pontos_turistico);
     float densidade = populacao / area_cidade;
     float PIBper = PIB / populacao;
-    printf("1° Densidade Populacional: %f", densidade);
-    printf("2° PIB per capita: %f", PIBper);
+    printf("1° Densidade Populacional: %f\n", densidade);
+    printf("2° PIB per capita: %f\n\n", PIBper);
+
     //Exibe dados cadasstrados (2° carta)
-    printf("\n\n2° Carta: %s\n", codigoCarta2);
+    printf("2° Carta: %s\n", codigoCarta2);
     printf("2° Estado  %s\n", ufEstado2);
     printf("2° Cidade: %s", nomeCidade2);
     printf("2° Codigo: %s\n", codigoCarta2);
     printf("2° População: %i\n", populacao2);
     printf("2° Área: %.2f\n", area_cidade2);
     printf("2° PIB: %.2f\n", PIB);
-    printf("2° Pontos Turisticos: %d\n\n", pontos_turistico2);
+    printf("2° Pontos Turisticos: %d\n", pontos_turistico2);
     float densidade2 = populacao2 / area_cidade2;
     float PIBper2 = PIB / populacao2;
 
-    printf("1° Densidade Populacional: %f", densidade2);
-    printf("2° PIB per capita: %f", PIBper2);
+    printf("1° Densidade Populacional: %f\n", densidade2);
+    printf("2° PIB per capita: %f\n\n", PIBper2);
 
     if(populacao > populacao2){
         printf("CARTA 1 VENCEU! %s (%s): %d", nomeCidade, ufEstado, populacao);
