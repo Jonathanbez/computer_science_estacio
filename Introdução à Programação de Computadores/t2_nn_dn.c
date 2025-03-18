@@ -106,6 +106,7 @@ int main() {
     printf("2° PIB per capita: %f\n\n", PIBper2);
 
     if(populacao > populacao2){
+        printf("COMPARAÇÃO DE CARTAS - ATRIBUTO: POPULAÇÃO\n");
         printf("CARTA 1 VENCEU - %s (%s): %d\n", nomeCidade, ufEstado, populacao);
     }
 }
