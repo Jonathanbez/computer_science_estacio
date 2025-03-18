@@ -3,17 +3,17 @@
 int main() {
 
     // Variaveis
-    char ufEstado[25];
+    char ufEstado[4];
     char codigoCarta[5];
-    char nomeCidade[4];
+    char nomeCidade[25];
     int populacao;
     float area_cidade;
     float PIB;
     int pontos_turistico;
     
-    char ufEstado2[25];
+    char ufEstado2[4];
     char codigoCarta2[5];
-    char nomeCidade2[4];
+    char nomeCidade2[25];
     int populacao2;
     float area_cidade2;
     float PIB2;
@@ -25,13 +25,13 @@ int main() {
     // 1° CARTA
     printf("CADASTRE A 1° CARTA");    
     printf("Digite o UF do Estado: \n");
-    fgets(ufEstado, 50, stdin);
+    fgets(ufEstado, 4, stdin);
       
     printf("Digite codigo da carta: ");
-    scanf("%s", codigoCarta);
+    scanf(codigoCarta, 4, stdin);
 
     printf("Digite nome da cidade: ");
-    fgets(nomeCidade, 50, stdin);
+    fgets(nomeCidade, 25, stdin);
 
     printf("Digite quantidade populacional: ");
     scanf("%d", &populacao);
@@ -50,10 +50,10 @@ int main() {
     printf("CADASTRE A 2° CARTA");
     
     printf("Digite o UF do Estado: \n");
-    fgets(ufEstado2, 25, stdin);
+    fgets(ufEstado2, 4, stdin);
 
     printf("Digite codigo da carta: ");
-    scanf("%c", &codigoCarta2);
+    fgets(codigoCarta2, 4, stdin);
 
     printf("Digite nome da cidade: ");
     fgets(nomeCidade2, 25, stdin);
