@@ -42,9 +42,9 @@ int main() {
     printf("Digite o PIB: \n");
     scanf("%f", &PIB);
 
-    printf("Digite Pontos Turisticos: \n");
+    printf("Digite Pontos Turisticos: \n\n");
     scanf("%d", &pontos_turistico);
-
+    getchar();
 
     // 2° CARTA
     printf("CADASTRE A 2° CARTA\n");
