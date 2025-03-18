@@ -3,9 +3,9 @@
 int main() {
 
     // Variaveis
-    char estado[25];
+    char ufEstado[25];
     char codigoCarta[5];
-    char nomeCidade[25];
+    char nomeCidade[4];
     int populacao;
     float area_cidade;
     float PIB;
@@ -13,9 +13,9 @@ int main() {
     float densidade = populacao / area_cidade;
     float PIBper = PIB / populacao;
 
-    char estado2[25];
+    char ufEstado2[25];
     char codigoCarta2[5];
-    char nomeCidade2[25];
+    char nomeCidade2[4];
     int populacao2;
     float area_cidade2;
     float PIB2;
@@ -27,8 +27,8 @@ int main() {
 
     // 1° CARTA
     printf("CADASTRE A 1° CARTA");    
-    printf("Digite o nome do Estado: \n");
-    fgets(estado, 50, stdin);
+    printf("Digite o UF do Estado: \n");
+    fgets(ufEstado, 50, stdin);
       
     printf("Digite codigo da carta: ");
     scanf("%s", codigoCarta);
@@ -52,11 +52,11 @@ int main() {
     // 2° CARTA
     printf("CADASTRE A 2° CARTA");
     
-    printf("Digite o nome do Estado: \n");
-    fgets(estado2, 25, stdin);
+    printf("Digite o UF do Estado: \n");
+    fgets(ufEstado2, 25, stdin);
 
     printf("Digite codigo da carta: ");
-    scanf("%s", codigoCarta2);
+    scanf("%s", &codigoCarta2);
 
     printf("Digite nome da cidade: ");
     fgets(nomeCidade2, 25, stdin);
@@ -75,7 +75,7 @@ int main() {
 
     //Exibe dados cadasstrados (1° carta)
     printf("\n\n1° Carta: %s\n", codigoCarta);
-    printf("1° Estado  %c\n", estado);
+    printf("1° Estado  %c\n", ufEstado);
     printf("1° Cidade: %s", nomeCidade);
     printf("1° Codigo: %s\n", codigoCarta);
     printf("1° População: %i\n", populacao);
@@ -86,7 +86,7 @@ int main() {
     printf("2° PIB per capita: %f", PIBper);
     //Exibe dados cadasstrados (2° carta)
     printf("\n\n2° Carta: %s\n", codigoCarta2);
-    printf("2° Estado  %c\n", estado2);
+    printf("2° Estado  %c\n", ufEstado2);
     printf("2° Cidade: %s", nomeCidade2);
     printf("2° Codigo: %s\n", codigoCarta2);
     printf("2° População: %i\n", populacao2);
@@ -95,3 +95,8 @@ int main() {
     printf("2° Pontos Turisticos: %d", pontos_turistico2);
     printf("1° Densidade Populacional: %f", densidade2);
     printf("2° PIB per capita: %f", PIBper2);
+
+    if(ufEstado > ufEstado2){
+        printf("CARTA 1 VENCEU! %s (%s): %d", nomeCidade, ufEstado, populacao);
+    }
+}
