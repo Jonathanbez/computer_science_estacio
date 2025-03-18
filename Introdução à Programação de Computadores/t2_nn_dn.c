@@ -23,7 +23,7 @@ int main() {
     printf("SUPER TRUNFO!\n");
 
     // 1° CARTA
-    printf("CADASTRE A 1° CARTA");    
+    printf("CADASTRE A 1° CARTA\n");    
     printf("Digite o UF do Estado: \n");
     fgets(ufEstado, 4, stdin);
       
@@ -47,7 +47,7 @@ int main() {
 
 
     // 2° CARTA
-    printf("CADASTRE A 2° CARTA");
+    printf("CADASTRE A 2° CARTA\n");
     
     printf("Digite o UF do Estado: \n");
     fgets(ufEstado2, 4, stdin);
@@ -91,7 +91,7 @@ int main() {
     printf("2° População: %i\n", populacao2);
     printf("2° Área: %.2f\n", area_cidade2);
     printf("2° PIB: %.2f\n", PIB);
-    printf("2° Pontos Turisticos: %d", pontos_turistico2);
+    printf("2° Pontos Turisticos: %d\n\n", pontos_turistico2);
     float densidade2 = populacao2 / area_cidade2;
     float PIBper2 = PIB / populacao2;
 
