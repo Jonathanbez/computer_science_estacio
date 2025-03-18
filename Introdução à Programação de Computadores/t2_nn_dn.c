@@ -27,22 +27,22 @@ int main() {
     printf("Digite o UF do Estado: \n");
     fgets(ufEstado, 4, stdin);
       
-    printf("Digite codigo da carta: ");
-    scanf(codigoCarta, 4, stdin);
+    printf("Digite codigo da carta: \n");
+    scanf(codigoCarta, 5, stdin);
 
-    printf("Digite nome da cidade: ");
+    printf("Digite nome da cidade: \n");
     fgets(nomeCidade, 25, stdin);
 
-    printf("Digite quantidade populacional: ");
+    printf("Digite quantidade populacional: \n");
     scanf("%d", &populacao);
 
-    printf("Digite Área da Cidade: ");
+    printf("Digite Área da Cidade: \n");
     scanf("%f", &area_cidade);
 
-    printf("Digite o PIB: ");
+    printf("Digite o PIB: \n");
     scanf("%f", &PIB);
 
-    printf("Digite Pontos Turisticos: ");
+    printf("Digite Pontos Turisticos: \n");
     scanf("%d", &pontos_turistico);
 
 
@@ -52,19 +52,19 @@ int main() {
     printf("Digite o UF do Estado: \n");
     fgets(ufEstado2, 4, stdin);
 
-    printf("Digite codigo da carta: ");
-    fgets(codigoCarta2, 4, stdin);
+    printf("Digite codigo da carta: \n");
+    fgets(codigoCarta2, 5, stdin);
 
-    printf("Digite nome da cidade: ");
+    printf("Digite nome da cidade: \n");
     fgets(nomeCidade2, 25, stdin);
 
-    printf("Digite quantidade populacional: ");
+    printf("Digite quantidade populacional: \n");
     scanf("%d", &populacao2);
 
-    printf("Digite Área da Cidade: ");
+    printf("Digite Área da Cidade: \n");
     scanf("%f", &area_cidade2);
 
-    printf("Digite o PIB: ");
+    printf("Digite o PIB: \n");
     scanf("%f", &PIB2);
 
     printf("Digite Pontos Turisticos: ");
