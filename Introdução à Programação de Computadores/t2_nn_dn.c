@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
 
@@ -26,11 +27,15 @@ int main() {
     printf("CADASTRE A 1° CARTA\n");    
     printf("Digite o UF do Estado: \n");
     fgets(ufEstado, 4, stdin);
+    ufEstado[strcspn(ufEstado, "\n")] = 0; // remove \n
+
     printf("Digite codigo da carta: \n");
     fgets(codigoCarta, 5, stdin);
+    codigoCarta[strcspn(codigoCarta, "\n")] = 0; // remove \n
 
     printf("Digite nome da cidade: \n");
     fgets(nomeCidade, 25, stdin);
+    nomeCidade[strcspn(nomeCidade, "\n")] = 0; // remove \n
 
     printf("Digite quantidade populacional: \n");
     scanf("%d", &populacao);
@@ -50,12 +55,15 @@ int main() {
     
     printf("Digite o UF do Estado: \n");
     fgets(ufEstado2, 4, stdin);
+    ufEstado2[strcspn(ufEstado2, "\n")] = 0; // remove \n
 
     printf("Digite codigo da carta: \n");
     fgets(codigoCarta2, 5, stdin);
+    codigoCarta2[strcspn(codigoCarta2, "\n")] = 0; // remove \n
 
     printf("Digite nome da cidade: \n");
     fgets(nomeCidade2, 25, stdin);
+    nomeCidade2[strcspn(nomeCidade2, "\n")] = 0; // remove \n
 
     printf("Digite quantidade populacional: \n");
     scanf("%d", &populacao2);
@@ -94,10 +102,10 @@ int main() {
     printf("2° Pontos Turisticos: %d\n", pontos_turistico2);
     float densidade2 = populacao2 / area_cidade2;
     float PIBper2 = PIB / populacao2;
-    printf("1° Densidade Populacional: %f\n", densidade2);
+    printf("2° Densidade Populacional: %f\n", densidade2);
     printf("2° PIB per capita: %f\n\n", PIBper2);
 
     if(populacao > populacao2){
-        printf("CARTA 1 VENCEU! %s (%s): %d", nomeCidade, ufEstado, populacao);
+        printf("CARTA 1 VENCEU - %s (%s): %d\n", nomeCidade, ufEstado, populacao);
     }
 }
