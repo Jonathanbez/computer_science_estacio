@@ -109,4 +109,8 @@ int main() {
         printf("COMPARAÇÃO DE CARTAS - ATRIBUTO: POPULAÇÃO\n");
         printf("CARTA 1 VENCEU - %s (%s): %d\n", nomeCidade, ufEstado, populacao);
     }
+    else{
+        printf("COMPARAÇÃO DE CARTAS - ATRIBUTO: POPULAÇÃO\n");
+        printf("CARTA 2 VENCEU - %s (%s): %d\n", nomeCidade2, ufEstado2, populacao2);
+    }
 }
