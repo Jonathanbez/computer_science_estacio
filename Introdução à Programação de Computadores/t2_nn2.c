@@ -17,7 +17,6 @@ int main(){
     }else{
         printf("Temperatura dentro dos parametros.\n");
     }
-
     if(umidade > 50){
         printf("Umidade elevada.\n");
     }else{
