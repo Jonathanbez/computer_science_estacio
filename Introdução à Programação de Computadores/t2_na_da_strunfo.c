@@ -113,7 +113,7 @@ int main(){
         break;
     case 5:
         printf("Comparação entre Densidade Demográfica: \n");
-        if(densidade > densidade2){
+        if(densidade < densidade2){
             printf("VENCEDOR: JOGADOR 1");
         }
         else if(densidade == densidade2){
