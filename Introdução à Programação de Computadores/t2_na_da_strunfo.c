@@ -56,7 +56,7 @@ int main(){
     printf("JOGADOR 2 - PIB: %.2f\n", pib2);
     printf("JOGADOR 2 - Pontos Turísticos: %d\n", pontosTuristicos2);
     float densidade2 = populacao2 / area2;
-    printf("JOGADOR 2 - Densidade demográfica: %f\n", densidade);
+    printf("JOGADOR 2 - Densidade demográfica: %f\n", densidade2);
 
     printf("ESCOLHA DA COMPARAÇÃO\n");
     printf("1. População\n2. Área\n3. PIB\n4. Pontos Tuísticos\n5. Densidade Demogŕafica\n");
@@ -112,7 +112,7 @@ int main(){
         }
         break;
     case 5:
-        printf("Comparação entre Densidade Demografica: \n");
+        printf("Comparação entre Densidade Demográfica: \n");
         if(densidade > densidade2){
             printf("VENCEDOR: JOGADOR 1");
         }
