@@ -50,13 +50,13 @@ int main(){
 
     //EXIBE DADOS CARTA JOGADOR 2 (2° carta)
     printf("DADOS CARTA 1\n");
-    printf("JOGADOR 1 - País: %s\n", nomePais2);
-    printf("JOGADOR 1 - População: %d\n", populacao2);
-    printf("JOGADOR 1 - Área: %.2f\n", area2);
-    printf("JOGADOR 1 - PIB: %.2f\n", pib2);
-    printf("JOGADOR 1 - Pontos Turísticos: %d\n", pontosTuristicos2);
+    printf("JOGADOR 2 - País: %s\n", nomePais2);
+    printf("JOGADOR 2 - População: %d\n", populacao2);
+    printf("JOGADOR 2 - Área: %.2f\n", area2);
+    printf("JOGADOR 2 - PIB: %.2f\n", pib2);
+    printf("JOGADOR 2 - Pontos Turísticos: %d\n", pontosTuristicos2);
     float densidade2 = populacao2 / area2;
-    printf("JOGADOR 1 - Densidade demográfica: %f\n", densidade);
+    printf("JOGADOR 2 - Densidade demográfica: %f\n", densidade);
 
     printf("ESCOLHA DA COMPARAÇÃO\n");
     printf("1. População\n2. Área\n3. PIB\n4. Pontos Tuísticos\n5. Densidade Demogŕafica\n");
