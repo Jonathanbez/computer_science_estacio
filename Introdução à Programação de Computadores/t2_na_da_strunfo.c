@@ -9,11 +9,11 @@ int main(){
 
     printf("JOGO SUPER TRUNFO!\n");
 
-    // CADASTRAMENTO 1° CARTA
+    //Cadastramento 1° carta
     printf("JOGADOR 1 - CADASTRE A CARTA\n\n");    
     printf("País: \n");
     fgets(nomePais, 60, stdin);
-    //nomePais2[strcspn(nomePais, "\n")] = 0;
+    nomePais2[strcspn(nomePais, "\n")] = 0;
     printf("População: \n");
     scanf("%d", &populacao);
     printf("Área: \n");
@@ -24,11 +24,11 @@ int main(){
     scanf("%d", &pontosTuristicos);
     getchar();
 
-    // CADASTRAMENTO 2° CARTA
+    //Cadastramento 2° carta
     printf("\nJOGADOR 2 - CADASTRE A CARTA\n\n");    
     printf("País: \n");
     fgets(nomePais2, 60, stdin);
-    //nomePais2[strcspn(nomePais2, "\n")] = 0;
+    nomePais2[strcspn(nomePais2, "\n")] = 0;
     printf("População: \n");
     scanf("%d", &populacao2);
     printf("Área: \n");
@@ -38,7 +38,7 @@ int main(){
     printf("Quantidade de Pontos Turísticos: \n");
     scanf("%d", &pontosTuristicos2);
 
-    //EXIBE DADOS CARTA JOGADOR 1 (1° carta)
+    //exibe dados carta jogador 1 (1° carta) / float "densidade" já com calculo
     printf("DADOS CARTA 1\n");
     printf("JOGADOR 1 - País: %s\n", nomePais);
     printf("JOGADOR 1 - População: %d\n", populacao);
@@ -48,7 +48,7 @@ int main(){
     float densidade = populacao / area;
     printf("JOGADOR 1 - Densidade demográfica: %f\n", densidade);
 
-    //EXIBE DADOS CARTA JOGADOR 2 (2° carta)
+    //Exibi dados carta jogador 2 (2° carta) / float "densidade" já com calculo
     printf("DADOS CARTA 1\n");
     printf("JOGADOR 2 - País: %s\n", nomePais2);
     printf("JOGADOR 2 - População: %d\n", populacao2);
@@ -58,6 +58,7 @@ int main(){
     float densidade2 = populacao2 / area2;
     printf("JOGADOR 2 - Densidade demográfica: %f\n", densidade2);
 
+    //Menu - Comparação entre cartas / implementado com SWITCH digitar numero para selecionar opção
     printf("ESCOLHA DA COMPARAÇÃO\n");
     printf("1. População\n2. Área\n3. PIB\n4. Pontos Tuísticos\n5. Densidade Demogŕafica\n");
     scanf("%d", &opcao);
