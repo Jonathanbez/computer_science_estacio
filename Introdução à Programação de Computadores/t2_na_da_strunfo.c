@@ -66,7 +66,7 @@ int main(){
     printf("\n*** ESCOLHA DA COMPARAÇÃO ***\n");
     printf("A. Escolha 2 atributos\nB. Escolha todos os atributos");
     printf("Digite o tipo de comparação (A ou B): \n");
-    scanf("%c", &opcao);
+    scanf(" %c", &opcao);
     
     // Lógica de comparação com switch
     switch (opcao)
@@ -87,25 +87,27 @@ int main(){
                 soma1 = populacao > populacao2 ? 1 : 0;
                 soma2 = populacao < populacao2 ? 1 : 0;
                 printf("População - Jogador 1: %d  vs Jogador 2: %d\n", populacao, populacao);
-            break;
+                break;
             case 2:
                 soma1 = area > area2 ? 1 : 0;
                 soma2 = area < area2 ? 1 : 0;
                 printf("Area - Jogador 1: %.2f  vs Jogador 2: %.2f\n", area, area2);
-            break;
+                break;
             case 3:
                 soma1 = pib > pib2 ? 1 : 0;
                 soma2 = pib < pib2 ? 1 : 0;
                 printf("PIB - Jogador 1: %.2f vs Jogador 2: %.2f\n", pib, pib2);            
+                break;
             case 4:
                 soma1 = pontosTuristicos > pontosTuristicos2 ? 1 : 0;
                 soma2 = pontosTuristicos < pontosTuristicos2 ? 1 : 0;
                 printf("Pontos Turísticos - Jogador 1: %d vs Jogador 2: %d\n", pontosTuristicos, pontosTuristicos2);
+                break;
             case 5:
                 soma1 = densidade < densidade2 ? 1 : 0;
                 soma2 = densidade > densidade2 ? 1 : 0;
-                printf("Densidade = Jogador 1: %.2f vs Jogador 2: %.2f\n", densidade, densidade2);
-            break;
+                printf("Densidade - Jogador 1: %.2f vs Jogador 2: %.2f\n", densidade, densidade2);
+                break;
             return 1;
             }
                 if(atr == atr1)
@@ -120,33 +122,36 @@ int main(){
                         soma1 += populacao > populacao2 ? 1 : 0;
                         soma2 += populacao < populacao2 ? 1 : 0;
                         printf("População - Jogador 1: %d  vs Jogador 2: %d\n", populacao, populacao);
-                    break;
+                        break;
                     case 2:
                         soma1 += area > area2 ? 1 : 0;
                         soma2 += area < area2 ? 1 : 0;
                         printf("Area - Jogador 1: %.2f  vs Jogador 2: %.2f\n", area, area2);
-                    break;
+                        break;
                     case 3:
                         soma1 += pib > pib2 ? 1 : 0;
                         soma2 += pib < pib2 ? 1 : 0;
-                        printf("PIB - Jogador 1: %.2f vs Jogador 2: %.2f\n", pib, pib2);            
+                        printf("PIB - Jogador 1: %.2f vs Jogador 2: %.2f\n", pib, pib2);
+                        break;          
                     case 4:
                         soma1 += pontosTuristicos > pontosTuristicos2 ? 1 : 0;
                         soma2 += pontosTuristicos < pontosTuristicos2 ? 1 : 0;
                         printf("Pontos Turísticos - Jogador 1: %d vs Jogador 2: %d\n", pontosTuristicos, pontosTuristicos2);
+                        break;
                     case 5:
                         soma1 += densidade < densidade2 ? 1 : 0;
                         soma2 += densidade > densidade2 ? 1 : 0;
                         printf("Densidade = Jogador 1: %.2f vs Jogador 2: %.2f\n", densidade, densidade2);
-                    break;
+                        break;
                     default:
                         printf("OPÇÃO INVALIDA");
-                    return 1;
+                        return 1;
                     }
                     printf("\nRESULTADO:\n");
-                    printf("Jogador 1: %d pontos\nJogador 2: %d pontos", soma1, soma2);
+                    printf("Jogador 1: %d pontos\nJogador 2: %d pontos\n", soma1, soma2);
                     printf("Vencedor: %s\n", soma1 > soma2 ? "Jogaodr 1" : (soma1 < soma2 ? "Jogador 2" : "Empate"));
                 }
+                break;
             case 'B': // Escolha de 2 atributos opção 2
             case 'b':
 
