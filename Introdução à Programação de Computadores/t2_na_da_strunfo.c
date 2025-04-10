@@ -172,9 +172,9 @@ int main(){
                 printf("Jogador 1: %d pontos\nJogador 2: %d pontos", soma1, soma2);
                 printf("Vencedor: %s\n", soma1 > soma2 ? "Jogaodr 1" : (soma1 < soma2 ? "Jogador 2" : "Empate"));
                 break;
-            default;
+        default:
             printf("OPÇÃO INVALIDA");
-            break;
+        break;
         }
     return 0;
 }
